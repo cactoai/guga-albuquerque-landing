@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Instagram, MessageCircle, Play, Sparkles } from "lucide-react";
+import { Instagram, MessageCircle, Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   const handleInstagramClick = () => {
@@ -27,65 +27,72 @@ const HeroSection = () => {
       <div className="absolute bottom-32 right-16 w-24 h-24 bg-gradient-to-r from-orange-500/20 to-pink-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
       <div className="absolute top-1/3 right-20 w-16 h-16 bg-gradient-to-r from-purple-500/20 to-orange-500/20 rounded-full blur-xl animate-pulse delay-2000"></div>
 
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
-        {/* Main image */}
-        <div className="mb-8 relative inline-block">
-          <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-full opacity-30 scale-110 animate-pulse"></div>
-          <div className="absolute -inset-4 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-full opacity-20 blur-lg animate-pulse delay-500"></div>
-          <img 
-            src="/lovable-uploads/1e2adddd-c5df-4be8-9ac6-2a664aa329d9.png" 
-            alt="Guga Albuquerque - O Rei da Farra"
-            className="relative z-10 w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-white/20 shadow-2xl hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full p-3 animate-bounce">
-            <Sparkles className="w-6 h-6 text-white" />
+      <div className="relative z-10 px-4 max-w-7xl mx-auto w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          {/* Content Left Side */}
+          <div className="text-center lg:text-left order-2 lg:order-1">
+            {/* Title and tagline */}
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-pink-400 via-purple-400 to-orange-400 bg-clip-text text-transparent mb-4 animate-fade-in tracking-tight">
+              GUGA FARRA
+            </h1>
+            
+            <p className="text-2xl md:text-4xl lg:text-5xl text-white/90 mb-4 font-bold animate-fade-in delay-300 tracking-wide">
+              🎉 A SUA FESTA DO SEU JEITO 🎉
+            </p>
+            
+            <p className="text-lg md:text-xl lg:text-2xl text-white/80 mb-8 leading-relaxed animate-fade-in delay-500">
+              "Transformo qualquer evento numa festa inesquecível! Pop, sertanejo, piseiro... 
+              <br className="hidden md:block" />
+              Sua festa, seu estilo, sua diversão garantida!"
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start items-center animate-fade-in delay-700 mb-8">
+              <Button 
+                onClick={handleInstagramClick}
+                className="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-600 hover:from-pink-600 hover:via-purple-600 hover:to-pink-700 text-white px-8 py-6 text-lg rounded-full shadow-2xl hover:shadow-pink-500/25 transition-all duration-300 hover:scale-110 flex items-center gap-3 w-full sm:w-auto border-2 border-white/20"
+              >
+                <Instagram className="w-6 h-6" />
+                Seguir no Instagram
+              </Button>
+              
+              <Button 
+                onClick={handleWhatsAppClick}
+                className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-6 text-lg rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-110 flex items-center gap-3 w-full sm:w-auto border-2 border-white/20"
+              >
+                <MessageCircle className="w-6 h-6" />
+                Contratar Festa
+              </Button>
+            </div>
+
+            {/* Music genres */}
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 animate-fade-in delay-1000">
+              {['Pop Nacional', 'Sertanejo', 'Piseiro', 'Forró', 'Axé'].map((genre) => (
+                <span 
+                  key={genre}
+                  className="bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors duration-300"
+                >
+                  {genre}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Title and tagline */}
-        <h1 className="text-5xl md:text-7xl font-black bg-gradient-to-r from-pink-400 via-purple-400 to-orange-400 bg-clip-text text-transparent mb-4 animate-fade-in tracking-tight">
-          GUGA FARRA
-        </h1>
-        
-        <p className="text-2xl md:text-4xl text-white/90 mb-2 font-bold animate-fade-in delay-300 tracking-wide">
-          🎉 A SUA FESTA DO SEU JEITO 🎉
-        </p>
-        
-        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in delay-500">
-          "Transformo qualquer evento numa festa inesquecível! Pop, sertanejo, piseiro... 
-          <br className="hidden md:block" />
-          Sua festa, seu estilo, sua diversão garantida!"
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in delay-700 mb-12">
-          <Button 
-            onClick={handleInstagramClick}
-            className="bg-gradient-to-r from-pink-500 via-purple-500 to-pink-600 hover:from-pink-600 hover:via-purple-600 hover:to-pink-700 text-white px-10 py-8 text-xl rounded-full shadow-2xl hover:shadow-pink-500/25 transition-all duration-300 hover:scale-110 flex items-center gap-4 w-full sm:w-auto border-2 border-white/20"
-          >
-            <Instagram className="w-7 h-7" />
-            Seguir no Instagram
-          </Button>
-          
-          <Button 
-            onClick={handleWhatsAppClick}
-            className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-10 py-8 text-xl rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 hover:scale-110 flex items-center gap-4 w-full sm:w-auto border-2 border-white/20"
-          >
-            <MessageCircle className="w-7 h-7" />
-            Contratar Festa
-          </Button>
-        </div>
-
-        {/* Music genres */}
-        <div className="flex flex-wrap justify-center gap-4 animate-fade-in delay-1000">
-          {['Pop Nacional', 'Sertanejo', 'Piseiro', 'Forró', 'Axé'].map((genre) => (
-            <span 
-              key={genre}
-              className="bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-colors duration-300"
-            >
-              {genre}
-            </span>
-          ))}
+          {/* Image Right Side */}
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-full opacity-30 scale-110 animate-pulse"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-full opacity-20 blur-lg animate-pulse delay-500"></div>
+              <img 
+                src="/lovable-uploads/1e2adddd-c5df-4be8-9ac6-2a664aa329d9.png" 
+                alt="Guga Albuquerque - O Rei da Farra"
+                className="relative z-10 w-80 h-80 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] object-cover rounded-full border-4 border-white/20 shadow-2xl hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full p-3 animate-bounce">
+                <Sparkles className="w-6 h-6 text-white" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
