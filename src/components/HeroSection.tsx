@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900 via-rose-900 to-orange-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900">
         <div className="absolute inset-0 opacity-20 animate-pulse">
           <div className="w-full h-full bg-repeat" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -32,15 +32,15 @@ const HeroSection = () => {
           {/* Content Left Side */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             {/* Title and tagline */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black bg-gradient-to-r from-pink-400 via-purple-400 to-orange-400 bg-clip-text text-transparent mb-4 animate-fade-in tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black bg-gradient-to-r from-pink-400 via-purple-400 to-orange-400 bg-clip-text text-transparent mb-4 animate-fade-in tracking-tight">
               GUGA FARRA
             </h1>
             
-            <p className="text-2xl md:text-4xl lg:text-5xl text-white/90 mb-4 font-bold animate-fade-in delay-300 tracking-wide">
+            <p className="text-xl md:text-2xl lg:text-3xl text-white/90 mb-4 font-bold animate-fade-in delay-300 tracking-wide">
               🎉 A SUA FESTA DO SEU JEITO 🎉
             </p>
             
-            <p className="text-lg md:text-xl lg:text-2xl text-white/80 mb-8 leading-relaxed animate-fade-in delay-500">
+            <p className="text-base md:text-lg lg:text-xl text-white/80 mb-8 leading-relaxed animate-fade-in delay-500">
               "Transformo qualquer evento numa festa inesquecível! Pop, sertanejo, piseiro... 
               <br className="hidden md:block" />
               Sua festa, seu estilo, sua diversão garantida!"
