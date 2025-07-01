@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Instagram, MessageCircle, Sparkles } from "lucide-react";
 
@@ -27,7 +28,7 @@ const HeroSection = () => {
       <div className="absolute top-1/3 right-20 w-16 h-16 bg-gradient-to-r from-purple-500/20 to-orange-500/20 rounded-full blur-xl animate-pulse delay-2000"></div>
 
       <div className="relative z-10 px-4 max-w-7xl mx-auto w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-start min-h-[80vh] pt-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           {/* Content Left Side */}
           <div className="text-center lg:text-left order-2 lg:order-1">
             {/* Title and tagline */}
@@ -78,7 +79,7 @@ const HeroSection = () => {
           </div>
 
           {/* Image Right Side */}
-          <div className="flex justify-center lg:justify-end order-1 lg:order-2 pt-16">
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2">
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-full opacity-30 scale-110 animate-pulse"></div>
               <div className="absolute -inset-4 bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 rounded-full opacity-20 blur-lg animate-pulse delay-500"></div>

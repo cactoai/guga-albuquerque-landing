@@ -9,11 +9,11 @@ const ContactSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5581996609371?text=Oi%20Guga%2C%20gostaria%20de%20conversar%20sobre%20sua%20m%C3%BAsica%21', '_blank');
+    window.open('https://wa.me/5581996109787?text=Oi%20Guga%2C%20gostaria%20de%20conversar%20sobre%20sua%20m%C3%BAsica%21', '_blank');
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-rose-50 via-amber-50 to-orange-50 relative overflow-hidden">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-rose-50 via-amber-50 to-orange-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-10 left-10 w-32 h-32 bg-rose-200 rounded-full opacity-20 animate-pulse"></div>
       <div className="absolute bottom-20 right-16 w-24 h-24 bg-amber-200 rounded-full opacity-30 animate-pulse delay-1000"></div>
@@ -58,7 +58,7 @@ const ContactSection = () => {
               onClick={handleWhatsAppClick}
               className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full"
             >
-              (81) 99660-9371
+              (81) 99610-9787
             </Button>
           </Card>
         </div>
