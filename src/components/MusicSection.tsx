@@ -22,9 +22,12 @@ const MusicSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 bg-white">
             <div className="relative overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-rose-200 to-pink-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <Music className="w-16 h-16 text-rose-600 opacity-80" />
-              </div>
+              <img 
+                src="/lovable-uploads/29253b77-bb3a-4e09-ac06-913717ac8b90.png" 
+                alt="Show Compacto - Evento íntimo com Guga Farra"
+                className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="p-6">
               <h3 className="font-bold text-xl text-gray-800 mb-2">Show Compacto</h3>
@@ -37,9 +40,12 @@ const MusicSection = () => {
 
           <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 bg-white">
             <div className="relative overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-amber-200 to-orange-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <Music className="w-16 h-16 text-amber-600 opacity-80" />
-              </div>
+              <img 
+                src="/lovable-uploads/b2d84316-5717-4fa9-a7ac-61083575f1c0.png" 
+                alt="Intermediário - Show para médio porte"
+                className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="p-6">
               <h3 className="font-bold text-xl text-gray-800 mb-2">Intermediário</h3>
@@ -52,9 +58,12 @@ const MusicSection = () => {
 
           <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 bg-white md:col-span-2 lg:col-span-1">
             <div className="relative overflow-hidden">
-              <div className="h-48 bg-gradient-to-br from-purple-200 to-rose-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                <Music className="w-16 h-16 text-purple-600 opacity-80" />
-              </div>
+              <img 
+                src="/lovable-uploads/3bc3d06b-bd97-4c1f-9bd4-f0d3380eb22e.png" 
+                alt="Grande Evento - Show com produção completa"
+                className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
             <div className="p-6">
               <h3 className="font-bold text-xl text-gray-800 mb-2">Grande Evento</h3>
