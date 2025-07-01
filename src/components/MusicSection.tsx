@@ -1,11 +1,14 @@
-
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Music } from "lucide-react";
 
 const MusicSection = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/5581996109787?text=Oi%20Guga%2C%20quero%20solicitar%20um%20orçamento%20para%20minha%20festa%21', '_blank');
+  };
+
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-rose-50 relative">
+    <section id="music" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-rose-50 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -77,6 +80,7 @@ const MusicSection = () => {
 
         <div className="text-center mt-12">
           <Button 
+            onClick={handleWhatsAppClick}
             size="lg" 
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >

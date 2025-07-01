@@ -1,4 +1,3 @@
-
 import { Instagram, MessageCircle, Heart, Music, Sparkles } from "lucide-react";
 
 const Footer = () => {
@@ -9,7 +8,7 @@ const Footer = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/5581996609371', '_blank');
+    window.open('https://wa.me/5581996109787', '_blank');
   };
 
   return (
@@ -65,7 +64,7 @@ const Footer = () => {
           </div>
           <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
             <h4 className="text-orange-400 font-bold text-lg mb-2">Contato</h4>
-            <p className="text-gray-300">WhatsApp: (81) 99660-9371</p>
+            <p className="text-gray-300">WhatsApp: (81) 99610-9787</p>
           </div>
         </div>
 
