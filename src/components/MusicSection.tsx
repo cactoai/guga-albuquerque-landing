@@ -23,7 +23,7 @@ const MusicSection = () => {
           <Card className="group hover:shadow-2xl transition-all duration-500 overflow-hidden border-0 bg-white">
             <div className="relative overflow-hidden">
               <img 
-                src="/lovable-uploads/29253b77-bb3a-4e09-ac06-913717ac8b90.png" 
+                src="/lovable-uploads/cfcd3c85-3048-47da-be10-952265b218fa.png" 
                 alt="Show Compacto - Evento íntimo com Guga Farra"
                 className="h-48 w-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
