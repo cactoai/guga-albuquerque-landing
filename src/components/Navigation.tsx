@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Menu, X, Music, User, Phone, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,9 +6,9 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "Início", href: "#hero", icon: Music },
+    { name: "Início", href: "#hero", icon: Heart },
     { name: "Sobre", href: "#about", icon: User },
-    { name: "Música", href: "#music", icon: Heart },
+    { name: "Música", href: "#music", icon: Music },
     { name: "Contato", href: "#contact", icon: Phone },
   ];
 

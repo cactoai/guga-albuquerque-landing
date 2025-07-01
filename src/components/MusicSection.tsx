@@ -1,7 +1,7 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Play, Music } from "lucide-react";
+import { Music } from "lucide-react";
 
 const MusicSection = () => {
   return (
@@ -9,11 +9,13 @@ const MusicSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Música que Emociona
+            Sua Festa, Seu Ritmo
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-rose-400 to-amber-400 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore o universo musical de Guga Albuquerque através de suas composições mais marcantes
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            Descubra como Guga Farra transforma qualquer ocasião em uma celebração memorável. Com formatos de shows que se adaptam ao tamanho e estilo do seu evento, você escolhe a vibe, e a gente entrega tudo: voz potente, som de qualidade, iluminação incrível e uma equipe técnica que cuida de cada detalhe.
+            <br className="hidden md:block" />
+            Dos ambientes mais íntimos aos palcos mais animados — a festa é sua, e o show é do seu jeito.
           </p>
         </div>
 
@@ -23,18 +25,12 @@ const MusicSection = () => {
               <div className="h-48 bg-gradient-to-br from-rose-200 to-pink-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                 <Music className="w-16 h-16 text-rose-600 opacity-80" />
               </div>
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Button size="lg" className="rounded-full bg-white/90 text-gray-800 hover:bg-white">
-                  <Play className="w-5 h-5 mr-2" />
-                  Ouvir
-                </Button>
-              </div>
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-xl text-gray-800 mb-2">Coração em Chamas</h3>
-              <p className="text-gray-600 mb-4">Uma balada apaixonada sobre o amor verdadeiro</p>
+              <h3 className="font-bold text-xl text-gray-800 mb-2">Show Compacto</h3>
+              <p className="text-gray-600 mb-4">Perfeito para eventos íntimos e ambientes menores</p>
               <div className="flex items-center text-sm text-gray-500">
-                <span>Pop Romântico • 2024</span>
+                <span>Ideal para até 100 pessoas</span>
               </div>
             </div>
           </Card>
@@ -44,18 +40,12 @@ const MusicSection = () => {
               <div className="h-48 bg-gradient-to-br from-amber-200 to-orange-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                 <Music className="w-16 h-16 text-amber-600 opacity-80" />
               </div>
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Button size="lg" className="rounded-full bg-white/90 text-gray-800 hover:bg-white">
-                  <Play className="w-5 h-5 mr-2" />
-                  Ouvir
-                </Button>
-              </div>
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-xl text-gray-800 mb-2">Nostalgia</h3>
-              <p className="text-gray-600 mb-4">Memórias que se transformam em melodia</p>
+              <h3 className="font-bold text-xl text-gray-800 mb-2">Intermediário</h3>
+              <p className="text-gray-600 mb-4">Estrutura completa para festas de médio porte</p>
               <div className="flex items-center text-sm text-gray-500">
-                <span>MPB Contemporânea • 2024</span>
+                <span>Ideal para 100 a 500 pessoas</span>
               </div>
             </div>
           </Card>
@@ -65,18 +55,12 @@ const MusicSection = () => {
               <div className="h-48 bg-gradient-to-br from-purple-200 to-rose-300 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                 <Music className="w-16 h-16 text-purple-600 opacity-80" />
               </div>
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Button size="lg" className="rounded-full bg-white/90 text-gray-800 hover:bg-white">
-                  <Play className="w-5 h-5 mr-2" />
-                  Ouvir
-                </Button>
-              </div>
             </div>
             <div className="p-6">
-              <h3 className="font-bold text-xl text-gray-800 mb-2">Eternidade</h3>
-              <p className="text-gray-600 mb-4">Um hino ao amor que transcende o tempo</p>
+              <h3 className="font-bold text-xl text-gray-800 mb-2">Grande Evento</h3>
+              <p className="text-gray-600 mb-4">Produção completa para grandes celebrações</p>
               <div className="flex items-center text-sm text-gray-500">
-                <span>Balada • 2024</span>
+                <span>Acima de 500 pessoas</span>
               </div>
             </div>
           </Card>
@@ -87,7 +71,7 @@ const MusicSection = () => {
             size="lg" 
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
-            Ouvir Todas as Músicas
+            Solicitar Orçamento
           </Button>
         </div>
       </div>
