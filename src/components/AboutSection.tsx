@@ -1,10 +1,9 @@
-
 import { Card } from "@/components/ui/card";
 import { Music, Heart, Mic } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="py-20 px-4 bg-white relative overflow-hidden">
+    <section id="about" className="py-20 px-4 bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-rose-400 via-amber-400 to-orange-400"></div>
       
